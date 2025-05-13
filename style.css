@@ -154,3 +154,26 @@ h1 {
         height: 300px;
     }
 }
+
+/* cards quadrados */
+.row.row-cols-1.row-cols-sm-2.row-cols-md-3 > .col > .card {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1 / 1;
+  }
+  
+  /* imagem cobre totalmente o topo do card e fica quadrada */
+  .card-img-top {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  
+  /* corpo do card ocupa o restante */
+  .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
